@@ -164,7 +164,7 @@ tasks.named('processResources', ProcessResources).configure {
             mod_license: 'MIT',
             mod_version: '0.1-1.19.2',
             mod_authors: 'Veltako',
-            mod_description: 'c\'est le mod pour le serveur Coblock',
+            mod_description: 'cest le mod pour le serveur Coblock',
     ]
 
     inputs.properties replaceProperties
