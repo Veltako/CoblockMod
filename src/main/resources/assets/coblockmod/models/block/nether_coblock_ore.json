@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "coblockmod:block/nether_coblock_ore"
+  }
+}

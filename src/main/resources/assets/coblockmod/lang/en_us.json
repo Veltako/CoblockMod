@@ -1,0 +1,11 @@
+{
+  "item.coblockmod.coblock": "Coblock",
+  "item.coblockmod.raw_coblock": "Raw Coblock",
+
+  "block.coblockmod.coblock_block": "Block of Coblock",
+  "block.coblockmod.coblock_ore": "Coblock Ore",
+  "block.coblockmod.end_stone_coblock_ore": "End Stone Coblock Ore",
+  "block.coblockmod.nether_coblock_ore": "End Stone Coblock Ore",
+
+  "itemGroup.coblocktab": "Coblock Tab"
+}
