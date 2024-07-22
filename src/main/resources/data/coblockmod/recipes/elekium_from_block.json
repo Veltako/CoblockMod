@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "coblockmod:coblock_block"
+    }
+  ],
+  "result": {
+    "item": "coblockmod:elekium_ingot",
+    "count": 9
+  }
+}

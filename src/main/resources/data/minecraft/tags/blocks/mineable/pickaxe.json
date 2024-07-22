@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "coblockmod:coblock_ore",
+    "coblockmod:coblock_block",
+    "coblockmod:deepslate_coblock_ore"
+  ]
+}

@@ -1,11 +1,31 @@
 {
-  "item.coblockmod.coblock": "Coblock",
-  "item.coblockmod.raw_coblock": "Raw Coblock",
-
+  "item.coblockmod.coblock_ingot": "Ingot Coblock",
+  "item.coblockmod.coblock_nugget": "Nugget Coblock",
   "block.coblockmod.coblock_block": "Block of Coblock",
   "block.coblockmod.coblock_ore": "Coblock Ore",
+  "block.coblockmod.deepslate_coblock_ore": "Deepslate Coblock Ore",
   "block.coblockmod.end_stone_coblock_ore": "End Stone Coblock Ore",
-  "block.coblockmod.nether_coblock_ore": "End Stone Coblock Ore",
+  "block.coblockmod.nether_coblock_ore": "Nether Coblock Ore",
+
+
+  "item.coblockmod.phenicium_ingot": "Ingot Phenicium",
+  "item.coblockmod.phenicium_raw": "Raw Phenicium",
+  "block.coblockmod.phenicium_block": "Block of Phenicium",
+  "block.coblockmod.phenicium_ore": "Phenicium Ore",
+  "block.coblockmod.deepslate_phenicium_ore": "Deepslate Phenicium Ore",
+
+
+  "item.coblockmod.elekium_ingot": "Ingot Elekium",
+  "item.coblockmod.elekium_nugget": "Elekium Nugget",
+  "block.coblockmod.elekium_block": "Block of Elekium",
+  "block.coblockmod.elekium_ore": "Elekium Ore",
+  "block.coblockmod.deepslate_elekium_ore": "Deepslate Elekium Ore",
+
+
+
+
+
+
 
   "itemGroup.coblocktab": "Coblock Tab"
 }

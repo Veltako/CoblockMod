@@ -7,7 +7,7 @@ public class ModCreativeModeTab {
     public static final CreativeModeTab COBLOCK_TAB = new CreativeModeTab("coblocktab") {
         @Override
         public ItemStack makeIcon() {
-            return new ItemStack(CoblockItems.COBLOCK.get());
+            return new ItemStack(CoblockItems.COBLOCK_INGOT.get());
         }
     };
 }

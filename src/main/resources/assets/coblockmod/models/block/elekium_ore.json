@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "coblockmod:block/elekium_ore"
+
+  }
+}

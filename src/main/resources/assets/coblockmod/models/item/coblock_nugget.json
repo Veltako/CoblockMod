@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "coblockmod:item/raw_coblock"
+    "layer0": "coblockmod:item/coblock_nugget"
   }
 }
