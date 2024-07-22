@@ -52,7 +52,7 @@ public class PheniciumBlocks {
     }
 
     private static <T extends Block> RegistryObject<Item> registryBlockItem(String name, RegistryObject<T> block, CreativeModeTab tab) {
-        return PheniciumItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
+        return PheniciumItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties().tab(tab).fireResistant()));
     }
 
     public static void register(IEventBus eventBus) {

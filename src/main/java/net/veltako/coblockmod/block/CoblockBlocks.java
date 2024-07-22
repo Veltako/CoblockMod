@@ -75,7 +75,7 @@ public class CoblockBlocks {
     }
 
     private static <T extends Block> RegistryObject<Item> registryBlockItem(String name, RegistryObject<T> block, CreativeModeTab tab) {
-        return CoblockItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
+        return CoblockItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties().tab(tab).fireResistant()));
     }
 
     public static void register(IEventBus eventBus) {
