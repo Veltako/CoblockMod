@@ -1,6 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "coblockmod:block/deepslate_phenicium_ore"
-  }
-}

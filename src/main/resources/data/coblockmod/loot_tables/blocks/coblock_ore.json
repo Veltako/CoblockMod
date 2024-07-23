@@ -4,11 +4,6 @@
     {
       "rolls": 1.0,
       "bonus_rolls": 0.0,
-      "conditions": [
-        {
-          "condition": "minecraft:survives_explosion"
-        }
-      ],
       "entries": [
         {
           "type": "minecraft:alternatives",
@@ -34,25 +29,7 @@
             },
             {
               "type": "minecraft:item",
-              "functions": [
-                {
-                  "function": "minecraft:set_count",
-                  "count": {
-                    "type": "minecraft:uniform",
-                    "min": 2.0,
-                    "max": 5.0
-                  },
-                  "add": false
-                },
-                {
-                  "function": "minecraft:apply_bonus",
-                  "formula": "minecraft:ore_drops"
-                },
-                {
-                  "function": "minecraft:explosion_decay"
-                }
-              ],
-              "name": "coblockmod:coblock_raw"
+              "name": "coblockmod:coblock_nugget"
             }
           ]
         }

@@ -1,21 +1,20 @@
 {
-  "item.coblockmod.coblock_ingot": "Ingot Coblock",
-  "item.coblockmod.coblock_nugget": "Nugget Coblock",
-  "block.coblockmod.coblock_block": "Block of Coblock",
+  "item.coblockmod.coblock_ingot": "Coblock Ingot",
+  "item.coblockmod.coblock_nugget": "Coblock Nugget",
+  "block.coblockmod.coblock_block": "Coblock Block",
   "block.coblockmod.coblock_ore": "Coblock Ore",
   "block.coblockmod.deepslate_coblock_ore": "Deepslate Coblock Ore",
   "block.coblockmod.end_stone_coblock_ore": "End Stone Coblock Ore",
   "block.coblockmod.nether_coblock_ore": "Nether Coblock Ore",
 
 
-  "item.coblockmod.phenicium_ingot": "Ingot Phenicium",
-  "item.coblockmod.phenicium_raw": "Raw Phenicium",
+  "item.coblockmod.phenicium_ingot": "Phenicium Ingot",
+  "item.coblockmod.phenicium_shard": "Phenicium Shard",
   "block.coblockmod.phenicium_block": "Block of Phenicium",
-  "block.coblockmod.phenicium_ore": "Phenicium Ore",
-  "block.coblockmod.deepslate_phenicium_ore": "Deepslate Phenicium Ore",
+  "block.coblockmod.nether_phenicium_ore": "Nether Phenicium Ore",
 
 
-  "item.coblockmod.elekium_ingot": "Ingot Elekium",
+  "item.coblockmod.elekium_ingot": "Elekium Ingot",
   "item.coblockmod.elekium_nugget": "Elekium Nugget",
   "block.coblockmod.elekium_block": "Block of Elekium",
   "block.coblockmod.elekium_ore": "Elekium Ore",

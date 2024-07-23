@@ -29,15 +29,8 @@ public class PheniciumBlocks {
             ), ModCreativeModeTab.COBLOCK_TAB
     );
 
-    public static final RegistryObject<Block> PHENICIUM_ORE = registryBlock("phenicium_ore",
-            () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(6f)
-                    .requiresCorrectToolForDrops(),
-                    UniformInt.of(5, 9)
-            ), ModCreativeModeTab.COBLOCK_TAB
-    );
 
-    public static final RegistryObject<Block> DEEPSLATE_PHENICIUM_ORE = registryBlock("deepslate_phenicium_ore",
+    public static final RegistryObject<Block> NETHER_PHENICIUM_ORE = registryBlock("nether_phenicium_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(6f)
                     .requiresCorrectToolForDrops(),

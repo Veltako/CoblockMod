@@ -13,7 +13,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.veltako.coblockmod.CoblockMod;
-import net.veltako.coblockmod.item.CoblockItems;
+import net.veltako.coblockmod.item.ElekiumItems;
 import net.veltako.coblockmod.item.ModCreativeModeTab;
 
 import java.util.function.Supplier;
@@ -53,7 +53,7 @@ public class ElekiumBlocks {
     }
 
     private static <T extends Block> RegistryObject<Item> registryBlockItem(String name, RegistryObject<T> block, CreativeModeTab tab) {
-        return CoblockItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
+        return ElekiumItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
     }
 
     public static void register(IEventBus eventBus) {

@@ -25,30 +25,11 @@
                   }
                 }
               ],
-              "name": "coblockmod:deepslate_phenicium_ore"
+              "name": "coblockmod:nether_phenicium_ore"
             },
             {
               "type": "minecraft:item",
-              "functions": [
-                {
-                  "function": "minecraft:set_count",
-                  "count": {
-                    "type": "minecraft:uniform",
-                    "min": 2.0,
-                    "max": 5.0
-                  },
-                  "add": false
-                },
-                {
-                  "enchantment": "minecraft:fortune",
-                  "function": "minecraft:apply_bonus",
-                  "formula": "minecraft:ore_drops"
-                },
-                {
-                  "function": "minecraft:explosion_decay"
-                }
-              ],
-              "name": "coblockmod:phenicium_raw"
+              "name": "coblockmod:phenicium_shard"
             }
           ]
         }

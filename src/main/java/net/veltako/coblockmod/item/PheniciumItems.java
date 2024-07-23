@@ -14,7 +14,7 @@ public class PheniciumItems {
     public static final RegistryObject<Item> PHENICIUM_INGOT = ITEMS.register("phenicium_ingot",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.COBLOCK_TAB).fireResistant()));
 
-    public static final RegistryObject<Item> PHENICIUM_RAW = ITEMS.register("phenicium_raw",
+    public static final RegistryObject<Item> PHENICIUM_SHARD = ITEMS.register("phenicium_shard",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.COBLOCK_TAB).fireResistant()));
 
     public static void register(IEventBus eventBus) {
