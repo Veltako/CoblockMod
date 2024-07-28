@@ -6,6 +6,7 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.DropExperienceBlock;
+import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -27,6 +28,7 @@ public class CoblockBlocks {
                     .strength(5.8f)
                     .requiresCorrectToolForDrops()
                     .explosionResistance(1200f)
+                    .sound(SoundType.NETHERITE_BLOCK)
                     .requiresCorrectToolForDrops()
             ), ModCreativeModeTab.COBLOCK_TAB
     );
@@ -46,6 +48,7 @@ public class CoblockBlocks {
                     .strength(6f)
                     .requiresCorrectToolForDrops()
                     .explosionResistance(1200f)
+                    .sound(SoundType.DEEPSLATE)
                     .requiresCorrectToolForDrops(),
                     UniformInt.of(5, 9)
             ), ModCreativeModeTab.COBLOCK_TAB
@@ -56,6 +59,7 @@ public class CoblockBlocks {
                     .strength(5.8f)
                     .requiresCorrectToolForDrops()
                     .explosionResistance(1000f)
+                    .sound(SoundType.NETHER_ORE)
                     .requiresCorrectToolForDrops(),
                     UniformInt.of(5, 9)
             ), ModCreativeModeTab.COBLOCK_TAB

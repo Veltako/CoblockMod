@@ -13,6 +13,8 @@
 
     "coblockmod:nether_coblock_ore",
     "coblockmod:nether_phenicium_ore",
+    "coblockmod:nether_agrium_ore",
+    "coblockmod:nether_agrium_ore_over_melted",
 
     "coblockmod:end_stone_coblock_ore"
   ]

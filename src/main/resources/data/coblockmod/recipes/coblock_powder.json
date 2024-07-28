@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "cookingtime": 100,
+  "experience": 0.1,
+  "group": "coblockmod",
+  "ingredient": {
+    "item": "coblockmod:coblock_ingot"
+  },
+  "result": {
+    "item": "coblockmod:coblock_powder",
+    "count": 1
+  }
+}

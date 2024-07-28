@@ -2,11 +2,11 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "coblockmod:elekium_block"
+      "item": "coblockmod:agrium_shard"
     }
   ],
   "result": {
-    "item": "coblockmod:elekium_ingot",
+    "item": "coblockmod:agrium_powder",
     "count": 9
   }
 }

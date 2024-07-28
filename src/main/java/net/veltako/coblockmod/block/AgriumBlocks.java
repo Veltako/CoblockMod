@@ -22,14 +22,15 @@ public class AgriumBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, CoblockMod.MOD_ID);
 
-    public static final RegistryObject<Block> AGRIUM_BLOCK = registryBlock("agrium_block",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+    public static final RegistryObject<Block> NETHER_AGRIUM_ORE = registryBlock("nether_agrium_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(5.8f)
-                    .requiresCorrectToolForDrops()
+                    .requiresCorrectToolForDrops() ,
+                    UniformInt.of(5, 9)
             ), ModCreativeModeTab.COBLOCK_TAB
     );
 
-    public static final RegistryObject<Block> NETHER_AGRIUM_ORE = registryBlock("nether_agrium_ore",
+    public static final RegistryObject<Block> NETHER_AGRIUM_ORE_OVER_MELTED = registryBlock("nether_agrium_ore_over_melted",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(5.8f)
                     .requiresCorrectToolForDrops(),
