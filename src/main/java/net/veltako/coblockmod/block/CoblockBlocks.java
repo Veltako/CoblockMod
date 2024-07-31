@@ -25,8 +25,7 @@ public class CoblockBlocks {
 
     public static final RegistryObject<Block> COBLOCK_BLOCK = registryBlock("coblock_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(5.8f)
-                    .requiresCorrectToolForDrops()
+                    .strength(55f)
                     .explosionResistance(1200f)
                     .sound(SoundType.NETHERITE_BLOCK)
                     .requiresCorrectToolForDrops()
@@ -35,39 +34,36 @@ public class CoblockBlocks {
 
     public static final RegistryObject<Block> COBLOCK_ORE = registryBlock("coblock_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(5.8f)
+                    .strength(50f)
                     .requiresCorrectToolForDrops()
-                    .explosionResistance(1000f)
-                    .requiresCorrectToolForDrops(),
+                    .explosionResistance(1000f),
                     UniformInt.of(5, 9)
             ), ModCreativeModeTab.COBLOCK_TAB
     );
 
     public static final RegistryObject<Block> DEEPSLATE_COBLOCK_ORE = registryBlock("deepslate_coblock_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(6f)
+                    .strength(50f)
                     .requiresCorrectToolForDrops()
                     .explosionResistance(1200f)
-                    .sound(SoundType.DEEPSLATE)
-                    .requiresCorrectToolForDrops(),
+                    .sound(SoundType.DEEPSLATE),
                     UniformInt.of(5, 9)
             ), ModCreativeModeTab.COBLOCK_TAB
     );
 
     public static final RegistryObject<Block> NETHER_COBLOCK_ORE = registryBlock("nether_coblock_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(5.8f)
+                    .strength(50f)
                     .requiresCorrectToolForDrops()
                     .explosionResistance(1000f)
-                    .sound(SoundType.NETHER_ORE)
-                    .requiresCorrectToolForDrops(),
+                    .sound(SoundType.NETHER_ORE),
                     UniformInt.of(5, 9)
             ), ModCreativeModeTab.COBLOCK_TAB
     );
 
     public static final RegistryObject<Block> END_STONE_COBLOCK_ORE = registryBlock("end_stone_coblock_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(5.8f)
+                    .strength(50f)
                     .requiresCorrectToolForDrops()
                     .explosionResistance(1200f)
                     .requiresCorrectToolForDrops(),

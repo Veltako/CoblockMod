@@ -24,17 +24,17 @@ public class AgriumBlocks {
 
     public static final RegistryObject<Block> NETHER_AGRIUM_ORE = registryBlock("nether_agrium_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(5.8f)
+                    .strength(5f)
                     .requiresCorrectToolForDrops() ,
-                    UniformInt.of(5, 9)
+                    UniformInt.of(8, 10)
             ), ModCreativeModeTab.COBLOCK_TAB
     );
 
     public static final RegistryObject<Block> NETHER_AGRIUM_ORE_OVER_MELTED = registryBlock("nether_agrium_ore_over_melted",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(5.8f)
+                    .strength(5f)
                     .requiresCorrectToolForDrops(),
-                    UniformInt.of(5, 9)
+                    UniformInt.of(8, 10)
             ), ModCreativeModeTab.COBLOCK_TAB
     );
 

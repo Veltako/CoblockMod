@@ -24,24 +24,24 @@ public class ElekiumBlocks {
 
     public static final RegistryObject<Block> ELEKIUM_BLOCK = registryBlock("elekium_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(5.8f)
+                    .strength(35f)
                     .requiresCorrectToolForDrops()
             ), ModCreativeModeTab.COBLOCK_TAB
     );
 
     public static final RegistryObject<Block> ELEKIUM_ORE = registryBlock("elekium_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(5.8f)
+                    .strength(30f)
                     .requiresCorrectToolForDrops(),
-                    UniformInt.of(5, 9)
+                    UniformInt.of(3, 7)
             ), ModCreativeModeTab.COBLOCK_TAB
     );
 
     public static final RegistryObject<Block> DEEPSLATE_ELEKIUM_ORE = registryBlock("deepslate_elekium_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(6f)
+                    .strength(30f)
                     .requiresCorrectToolForDrops(),
-                    UniformInt.of(5, 9)
+                    UniformInt.of(3, 7)
             ), ModCreativeModeTab.COBLOCK_TAB
     );
 

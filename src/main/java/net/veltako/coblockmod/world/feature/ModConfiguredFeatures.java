@@ -42,7 +42,8 @@ public class ModConfiguredFeatures {
             OreConfiguration.target(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, ElekiumBlocks.DEEPSLATE_ELEKIUM_ORE.get().defaultBlockState())));
 
     public static final Supplier<List<OreConfiguration.TargetBlockState>> NETHER_AGRIUM_ORES = Suppliers.memoize(() -> List.of(
-            OreConfiguration.target(OreFeatures.NETHER_ORE_REPLACEABLES, AgriumBlocks.NETHER_AGRIUM_ORE.get().defaultBlockState())));
+            OreConfiguration.target(OreFeatures.NETHER_ORE_REPLACEABLES, AgriumBlocks.NETHER_AGRIUM_ORE.get().defaultBlockState()),
+            OreConfiguration.target(OreFeatures.NETHER_ORE_REPLACEABLES, AgriumBlocks.NETHER_AGRIUM_ORE_OVER_MELTED.get().defaultBlockState())));
 
 
 

@@ -24,7 +24,7 @@ public class PheniciumBlocks {
 
     public static final RegistryObject<Block> PHENICIUM_BLOCK = registryBlock("phenicium_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(6f)
+                    .strength(35f)
                     .requiresCorrectToolForDrops()
             ), ModCreativeModeTab.COBLOCK_TAB
     );
@@ -32,9 +32,9 @@ public class PheniciumBlocks {
 
     public static final RegistryObject<Block> NETHER_PHENICIUM_ORE = registryBlock("nether_phenicium_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(6f)
+                    .strength(30f)
                     .requiresCorrectToolForDrops(),
-                    UniformInt.of(5, 9)
+                    UniformInt.of(4, 8)
             ), ModCreativeModeTab.COBLOCK_TAB
     );
 
