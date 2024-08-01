@@ -65,7 +65,6 @@ public class CoblockMod {
 
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
-
         }
     }
 }
