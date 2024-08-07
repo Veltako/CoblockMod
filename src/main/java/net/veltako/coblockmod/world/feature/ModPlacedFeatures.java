@@ -18,35 +18,33 @@ public class ModPlacedFeatures {
     public static final RegistryObject<PlacedFeature> COBLOCK_ORE_PLACED = PLACED_FEATURES.register("coblock_ore_placed",
             () -> new PlacedFeature(ModConfiguredFeatures.COBLOCK_ORE.getHolder().get(),
                     commonOrePlacement(1, // Veines Par Chunk
-                            HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(-64), VerticalAnchor.aboveBottom(-32))))
+                            HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(-32))))
     );
 
     public static final RegistryObject<PlacedFeature> END_COBLOCK_ORE_PLACED = PLACED_FEATURES.register("end_coblock_ore_placed",
             () -> new PlacedFeature(ModConfiguredFeatures.END_COBLOCK_ORE.getHolder().get(), commonOrePlacement(1, // Veines Par Chunk
-                    HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(-80), VerticalAnchor.aboveBottom(80))))
+                    HeightRangePlacement.uniform(VerticalAnchor.absolute(-80), VerticalAnchor.absolute(80))))
     );
 
     public static final RegistryObject<PlacedFeature> NETHER_COBLOCK_ORE_PLACED = PLACED_FEATURES.register("nether_coblock_ore_placed",
             () -> new PlacedFeature(ModConfiguredFeatures.NETHER_COBLOCK_ORE.getHolder().get(), commonOrePlacement(1, // Veines Par Chunk
-                    HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(-80), VerticalAnchor.aboveBottom(80))))
+                    HeightRangePlacement.uniform(VerticalAnchor.absolute(4), VerticalAnchor.absolute(124))))
     );
 
     public static final RegistryObject<PlacedFeature> NETHER_PHENICIUM_ORE_PLACED = PLACED_FEATURES.register("nether_phenicium_ore_placed",
             () -> new PlacedFeature(ModConfiguredFeatures.NETHER_PHENICIUM_ORE.getHolder().get(), commonOrePlacement(2, // Veines Par Chunk
-                    HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(-80), VerticalAnchor.aboveBottom(80))))
+                    HeightRangePlacement.uniform(VerticalAnchor.absolute(4), VerticalAnchor.absolute(124))))
     );
 
     public static final RegistryObject<PlacedFeature> ELEKIUM_ORE_PLACED = PLACED_FEATURES.register("elekium_ore_placed",
             () -> new PlacedFeature(ModConfiguredFeatures.ELEKIUM_ORE.getHolder().get(), commonOrePlacement(3, // Veines Par Chunk
-                    HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(-50), VerticalAnchor.aboveBottom(-10))))
+                    HeightRangePlacement.uniform(VerticalAnchor.absolute(-50), VerticalAnchor.absolute(-10))))
     );
 
     public static final RegistryObject<PlacedFeature> NETHER_AGRIUM_ORE_PLACED = PLACED_FEATURES.register("nether_agrium_ore_placed",
-            () -> new PlacedFeature(ModConfiguredFeatures.ELEKIUM_ORE.getHolder().get(), commonOrePlacement(5, // Veines Par Chunk
-                    HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(-64), VerticalAnchor.aboveBottom(12))))
+            () -> new PlacedFeature(ModConfiguredFeatures.NETHER_AGRIUM_ORE.getHolder().get(), commonOrePlacement(5, // Veines Par Chunk
+                    HeightRangePlacement.uniform(VerticalAnchor.absolute(4), VerticalAnchor.absolute(124))))
     );
-
-
 
 
     public static List<PlacementModifier> orePlacement(PlacementModifier p_195347_, PlacementModifier p_195348_) {

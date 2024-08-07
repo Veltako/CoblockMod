@@ -1,0 +1,28 @@
+{
+  "item.coblockmod.coblock_ingot": "Lingot de Coblock",
+  "item.coblockmod.coblock_nugget": "Joyaux de Coblock",
+  "item.coblockmod.coblock_powder": "Poudre de Coblock",
+  "block.coblockmod.coblock_block": "Bloc de Coblock",
+  "block.coblockmod.coblock_ore": "Minerai de Coblock",
+  "block.coblockmod.deepslate_coblock_ore": "Minerai de Coblock des abîmes",
+  "block.coblockmod.end_stone_coblock_ore": "Minerai de Coblock de l'End",
+  "block.coblockmod.nether_coblock_ore": "Minerai de Coblock du Nether",
+
+  "item.coblockmod.phenicium_ingot": "Lingot de Phenicium",
+  "item.coblockmod.phenicium_shard": "Eclat de Phenicium",
+  "block.coblockmod.phenicium_block": "Bloc de Phenicium",
+  "block.coblockmod.nether_phenicium_ore": "Minerai de Phenicium du Nether",
+
+  "item.coblockmod.elekium_ingot": "Lingot de Elekium",
+  "item.coblockmod.elekium_nugget": "Pépite d'Elekium",
+  "block.coblockmod.elekium_block": "Bloc de Elekium",
+  "block.coblockmod.elekium_ore": "Minerai d'Elekium",
+  "block.coblockmod.deepslate_elekium_ore": "Minerai d'Elekium des abîmes",
+
+  "item.coblockmod.agrium_powder": "Poudre d'Agrium",
+  "item.coblockmod.agrium_shard": "Eclat d'Agrium",
+  "block.coblockmod.nether_agrium_ore": "Minerai d'Agrium du Nether",
+  "block.coblockmod.nether_agrium_ore_over_melted": "Minerai de dioxyde d'Agrium",
+
+  "itemGroup.coblocktab": "Coblock Tab"
+}

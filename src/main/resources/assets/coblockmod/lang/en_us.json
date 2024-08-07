@@ -1,6 +1,6 @@
 {
   "item.coblockmod.coblock_ingot": "Coblock Ingot",
-  "item.coblockmod.coblock_nugget": "Coblock Nugget",
+  "item.coblockmod.coblock_nugget": "Coblock Jewler",
   "item.coblockmod.coblock_powder": "Coblock Powder",
   "block.coblockmod.coblock_block": "Coblock Block",
   "block.coblockmod.coblock_ore": "Coblock Ore",
@@ -10,12 +10,12 @@
 
   "item.coblockmod.phenicium_ingot": "Phenicium Ingot",
   "item.coblockmod.phenicium_shard": "Phenicium Shard",
-  "block.coblockmod.phenicium_block": "Block of Phenicium",
+  "block.coblockmod.phenicium_block": "Phenicium Block",
   "block.coblockmod.nether_phenicium_ore": "Nether Phenicium Ore",
 
   "item.coblockmod.elekium_ingot": "Elekium Ingot",
   "item.coblockmod.elekium_nugget": "Elekium Nugget",
-  "block.coblockmod.elekium_block": "Block of Elekium",
+  "block.coblockmod.elekium_block": "Elekium Block",
   "block.coblockmod.elekium_ore": "Elekium Ore",
   "block.coblockmod.deepslate_elekium_ore": "Deepslate Elekium Ore",
 

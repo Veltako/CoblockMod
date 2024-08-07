@@ -50,20 +50,20 @@ public class ModConfiguredFeatures {
 
 
     public static final RegistryObject<ConfiguredFeature<?, ?>> COBLOCK_ORE = CONFIGURED_FEATURES.register("coblock_ore",
-            () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(OVERWORLD_COBLOCK_ORES.get(),1 //taille de la veine
+            () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(OVERWORLD_COBLOCK_ORES.get(),3 //taille de la veine
             )));
 
     public static final RegistryObject<ConfiguredFeature<?, ?>> END_COBLOCK_ORE = CONFIGURED_FEATURES.register("end_coblock_ore",
-            () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(END_COBLOCK_ORES.get(), 1)));
+            () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(END_COBLOCK_ORES.get(), 3)));
 
     public static final RegistryObject<ConfiguredFeature<?, ?>> NETHER_COBLOCK_ORE = CONFIGURED_FEATURES.register("nether_coblock_ore",
-            () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(NETHER_COBLOCK_ORES.get(), 1)));
+            () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(NETHER_COBLOCK_ORES.get(), 3)));
 
     public static final RegistryObject<ConfiguredFeature<?, ?>> NETHER_PHENICIUM_ORE = CONFIGURED_FEATURES.register("nether_phenicium_ore",
-            () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(NETHER_PHENICIUM_ORES.get(), 2)));
+            () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(NETHER_PHENICIUM_ORES.get(), 3)));
 
     public static final RegistryObject<ConfiguredFeature<?, ?>> ELEKIUM_ORE = CONFIGURED_FEATURES.register("elekium_ore",
-            () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(OVERWORLD_ELEKIUM_ORES.get(),2)));
+            () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(OVERWORLD_ELEKIUM_ORES.get(),3)));
 
     public static final RegistryObject<ConfiguredFeature<?, ?>> NETHER_AGRIUM_ORE = CONFIGURED_FEATURES.register("nether_agrium_ore",
             () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(NETHER_AGRIUM_ORES.get(),6)));
