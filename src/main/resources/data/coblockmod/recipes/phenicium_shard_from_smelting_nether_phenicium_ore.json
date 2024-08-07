@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 1.0,
+  "group": "phenicium",
+  "ingredient": {
+    "item": "coblockmod:nether_phenicium_ore"
+  },
+  "result": "coblockmod:phenicium_shard"
+}

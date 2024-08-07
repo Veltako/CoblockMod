@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:blasting",
+  "cookingtime": 210,
+  "experience": 6.0,
+  "group": "phenicium",
+  "ingredient": {
+    "item": "coblockmod:phenicium_shard"
+  },
+  "result": "coblockmod:phenicium_ingot"
+}
