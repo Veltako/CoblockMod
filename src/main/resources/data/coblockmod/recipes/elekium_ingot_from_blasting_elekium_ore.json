@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:blasting",
+  "cookingtime": 100,
+  "experience": 1.0,
+  "group": "elekium",
+  "ingredient": {
+    "item": "coblockmod:elekium_ore"
+  },
+  "result": "coblockmod:elekium_ingot"
+}

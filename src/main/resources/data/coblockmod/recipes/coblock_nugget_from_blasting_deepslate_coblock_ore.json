@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:blasting",
+  "cookingtime": 100,
+  "experience": 1.0,
+  "group": "coblock",
+  "ingredient": {
+    "item": "coblockmod:deepslate_coblock_ore"
+  },
+  "result": "coblockmod:coblock_nugget"
+}

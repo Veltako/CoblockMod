@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "coblockmod:elekium_nugget"
+    }
+  },
+  "result": {
+    "item": "coblockmod:elekium_ingot"
+  }
+}

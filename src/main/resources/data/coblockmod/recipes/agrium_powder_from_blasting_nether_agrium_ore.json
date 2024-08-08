@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:blasting",
+  "cookingtime": 100,
+  "experience": 1.0,
+  "group": "agrium",
+  "ingredient": {
+    "item": "coblockmod:nether_agrium_ore"
+  },
+  "result": "coblockmod:agrium_powder"
+}
