@@ -1,5 +1,7 @@
 package net.veltako.coblockmod.item;
 
+import net.minecraft.world.item.PickaxeItem;
+import net.minecraft.world.item.Tiers;
 import net.veltako.coblockmod.CoblockMod;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -20,6 +22,9 @@ public class CoblockItems {
     public static final RegistryObject<Item> COBLOCK_POWDER = ITEMS.register("coblock_powder",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.COBLOCK_TAB)));
 
+    public static final RegistryObject<Item> COBLOCK_PICKAXE = ITEMS.register("coblock_pickaxe",
+            () -> new PickaxeItem(Tiers.NETHERITE, 10, 5f,
+                    new Item.Properties().tab(ModCreativeModeTab.COBLOCK_TAB).fireResistant().stacksTo(1)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
