@@ -1,6 +1,8 @@
 package net.veltako.coblockmod;
 
 import com.mojang.logging.LogUtils;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -15,6 +17,8 @@ import net.veltako.coblockmod.block.ElekiumBlocks;
 import net.veltako.coblockmod.block.PheniciumBlocks;
 import net.veltako.coblockmod.event.BlockBreakEventHandler;
 import net.veltako.coblockmod.event.ItemWaterEventHandler;
+import net.veltako.coblockmod.fluid.ModFluidTypes;
+import net.veltako.coblockmod.fluid.ModFluids;
 import net.veltako.coblockmod.item.AgriumItems;
 import net.veltako.coblockmod.item.CoblockItems;
 import net.veltako.coblockmod.item.ElekiumItems;
@@ -47,6 +51,9 @@ public class CoblockMod {
         ModConfiguredFeatures.register(modEventBus);
         ModPlacedFeatures.register(modEventBus);
 
+        ModFluids.register(modEventBus);
+        ModFluidTypes.register(modEventBus);
+
         modEventBus.addListener(this::commonSetup);
 
         // Enregistrement du gestionnaire d'événements de rupture de bloc
@@ -65,6 +72,8 @@ public class CoblockMod {
 
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
+            ItemBlockRenderTypes.setRenderLayer(ModFluids.SOURCE_SOAP_WATER.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(ModFluids.FLOWING_SOAP_WATER.get(), RenderType.translucent());
         }
     }
 }
