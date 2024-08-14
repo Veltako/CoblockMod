@@ -4,11 +4,14 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.event.entity.EntityJoinLevelEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.veltako.coblockmod.CoblockMod;
+import net.veltako.coblockmod.fluid.ModFluids;
+import net.veltako.coblockmod.item.AgriumItems;
 import net.veltako.coblockmod.item.CoblockItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -35,7 +38,7 @@ public class ItemWaterEventHandler {
         LOGGER.debug("EntityJoinLevelEvent captured: {}", item);
 
         // Vérifie si l'item est COBLOCK_POWDER
-        if (item == CoblockItems.COBLOCK_POWDER.get()) {
+        if (item == CoblockItems.COBLOCK_POWDER.get() || item == AgriumItems.AGRIUM_POWDER.get()) {
             // Ajouter un message de débogage pour vérifier si l'item est COBLOCK_POWDER
             LOGGER.debug("Item is COBLOCK_POWDER");
             itemsToCheck.add(itemEntity);
@@ -56,10 +59,17 @@ public class ItemWaterEventHandler {
             }
 
             BlockPos itemPos = itemEntity.blockPosition();
+            Item item = itemEntity.getItem().getItem();
             if (isItemInWater(itemEntity, itemPos)) {
-                LOGGER.debug("COBLOCK_POWDER is in water, removing item");
+                if (item == CoblockItems.COBLOCK_POWDER.get() || item == AgriumItems.AGRIUM_POWDER.get())
+                {
+                    itemEntity.discard(); // Supprime l'item
+                    itemsToRemove.add(itemEntity);
+                }
+            } else if (isItemInLava(itemEntity, itemPos)) {
+                BlockState soapWaterState = ModFluids.SOURCE_SOAP_WATER.get().defaultFluidState().createLegacyBlock();
+                itemEntity.level.setBlock(itemPos, soapWaterState, 3);
                 itemEntity.discard(); // Supprime l'item
-                itemsToRemove.add(itemEntity);
             }
         }
         itemsToCheck.removeAll(itemsToRemove);
@@ -67,5 +77,8 @@ public class ItemWaterEventHandler {
 
     private static boolean isItemInWater(ItemEntity itemEntity, BlockPos pos) {
         return itemEntity.level.getBlockState(pos).getBlock() == Blocks.WATER;
+    }
+    private static boolean isItemInLava(ItemEntity itemEntity, BlockPos pos) {
+        return itemEntity.level.getBlockState(pos).getBlock() == Blocks.LAVA;
     }
 }

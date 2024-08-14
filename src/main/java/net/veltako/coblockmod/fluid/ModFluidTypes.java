@@ -23,8 +23,9 @@ public class ModFluidTypes {
             FluidType.Properties.create()
                     .lightLevel(0)
                     .canSwim(false)
-                    .density(2000)
-                    .viscosity(3000)
+                    .density(3000)
+                    .temperature(900)
+                    .viscosity(6000)
                     .canHydrate(false)
                     .sound(SoundAction.get("drink"),
                     SoundEvents.HONEY_DRINK));
