@@ -34,13 +34,8 @@ public class ItemWaterEventHandler {
         ItemEntity itemEntity = (ItemEntity) event.getEntity();
         Item item = itemEntity.getItem().getItem();
 
-        // Ajouter un message de débogage pour vérifier si l'événement est capturé
-        LOGGER.debug("EntityJoinLevelEvent captured: {}", item);
-
         // Vérifie si l'item est COBLOCK_POWDER
         if (item == CoblockItems.COBLOCK_POWDER.get() || item == AgriumItems.AGRIUM_POWDER.get()) {
-            // Ajouter un message de débogage pour vérifier si l'item est COBLOCK_POWDER
-            LOGGER.debug("Item is COBLOCK_POWDER");
             itemsToCheck.add(itemEntity);
         }
     }

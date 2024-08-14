@@ -25,6 +25,7 @@
   "block.coblockmod.nether_agrium_ore": "Nether Agrium Ore",
   "block.coblockmod.nether_agrium_ore_over_melted": "Nether Agrium Ore Over Melted",
   "item.coblockmod.soap_water_bucket": "Agrium Bucket",
+  "item.coblockmod.agrium_apple": "Agrium Apple",
 
   "itemGroup.coblocktab": "Coblock Tab"
 }

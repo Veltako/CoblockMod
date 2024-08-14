@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#1#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "coblockmod:agrium_shard"
+    },
+    "1": {
+      "item": "minecraft:golden_apple"
+    }
+  },
+  "result": {
+    "item": "coblockmod:agrium_apple"
+  }
+}
