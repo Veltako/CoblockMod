@@ -15,6 +15,7 @@ import net.veltako.coblockmod.block.AgriumBlocks;
 import net.veltako.coblockmod.block.CoblockBlocks;
 import net.veltako.coblockmod.block.ElekiumBlocks;
 import net.veltako.coblockmod.block.PheniciumBlocks;
+import net.veltako.coblockmod.event.AgriumAppleEventHandler;
 import net.veltako.coblockmod.event.BlockBreakEventHandler;
 import net.veltako.coblockmod.event.ItemWaterEventHandler;
 import net.veltako.coblockmod.fluid.ModFluidTypes;
@@ -54,13 +55,17 @@ public class CoblockMod {
         ModFluids.register(modEventBus);
         ModFluidTypes.register(modEventBus);
 
-        modEventBus.addListener(this::commonSetup);
 
-        // Enregistrement du gestionnaire d'événements de rupture de bloc
-        MinecraftForge.EVENT_BUS.register(BlockBreakEventHandler.class);
-        MinecraftForge.EVENT_BUS.register(ItemWaterEventHandler.class);
+        // Enregistrement des gestionnaires d'événements
+        MinecraftForge.EVENT_BUS.register(new BlockBreakEventHandler());
+        MinecraftForge.EVENT_BUS.register(new ItemWaterEventHandler());
+        MinecraftForge.EVENT_BUS.register(new AgriumAppleEventHandler());
 
+        // Enregistrement de cet objet dans l'event bus
         MinecraftForge.EVENT_BUS.register(this);
+
+        modEventBus.addListener(this::commonSetup);
+        // Enregistrement des listeners communs
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
