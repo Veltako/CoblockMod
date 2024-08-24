@@ -26,6 +26,9 @@
   "block.coblockmod.nether_agrium_ore_over_melted": "Nether Agrium Ore Over Melted",
   "item.coblockmod.soap_water_bucket": "Agrium Bucket",
   "item.coblockmod.agrium_apple": "Agrium Apple",
+  "item.coblockmod.agrium_chips": "Agrium Chips",
+
+  "item.coblockmod.bad_snowman_egg": "Bad Snowman Egg",
 
   "itemGroup.coblocktab": "Coblock Tab"
 }

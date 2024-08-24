@@ -3,6 +3,7 @@ package net.veltako.coblockmod;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -15,18 +16,17 @@ import net.veltako.coblockmod.block.AgriumBlocks;
 import net.veltako.coblockmod.block.CoblockBlocks;
 import net.veltako.coblockmod.block.ElekiumBlocks;
 import net.veltako.coblockmod.block.PheniciumBlocks;
-import net.veltako.coblockmod.event.AgriumAppleEventHandler;
+import net.veltako.coblockmod.entity.ModEntityTypes;
+import net.veltako.coblockmod.entity.client.BadSnowmanRenderer;
 import net.veltako.coblockmod.event.BlockBreakEventHandler;
 import net.veltako.coblockmod.event.ItemWaterEventHandler;
 import net.veltako.coblockmod.fluid.ModFluidTypes;
 import net.veltako.coblockmod.fluid.ModFluids;
-import net.veltako.coblockmod.item.AgriumItems;
-import net.veltako.coblockmod.item.CoblockItems;
-import net.veltako.coblockmod.item.ElekiumItems;
-import net.veltako.coblockmod.item.PheniciumItems;
+import net.veltako.coblockmod.item.*;
 import net.veltako.coblockmod.world.feature.ModConfiguredFeatures;
 import net.veltako.coblockmod.world.feature.ModPlacedFeatures;
 import org.slf4j.Logger;
+import software.bernie.geckolib3.GeckoLib;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(CoblockMod.MOD_ID)
@@ -55,11 +55,14 @@ public class CoblockMod {
         ModFluids.register(modEventBus);
         ModFluidTypes.register(modEventBus);
 
+        MobEggs.register(modEventBus);
+        ModEntityTypes.register(modEventBus);
+
+        GeckoLib.initialize();
 
         // Enregistrement des gestionnaires d'événements
-        MinecraftForge.EVENT_BUS.register(new BlockBreakEventHandler());
-        MinecraftForge.EVENT_BUS.register(new ItemWaterEventHandler());
-        MinecraftForge.EVENT_BUS.register(new AgriumAppleEventHandler());
+        MinecraftForge.EVENT_BUS.register(BlockBreakEventHandler.class);
+        MinecraftForge.EVENT_BUS.register(ItemWaterEventHandler.class);
 
         // Enregistrement de cet objet dans l'event bus
         MinecraftForge.EVENT_BUS.register(this);
@@ -79,6 +82,8 @@ public class CoblockMod {
         public static void onClientSetup(FMLClientSetupEvent event) {
             ItemBlockRenderTypes.setRenderLayer(ModFluids.SOURCE_SOAP_WATER.get(), RenderType.translucent());
             ItemBlockRenderTypes.setRenderLayer(ModFluids.FLOWING_SOAP_WATER.get(), RenderType.translucent());
+
+            EntityRenderers.register(ModEntityTypes.BAD_SNOWMAN.get(), BadSnowmanRenderer::new);
         }
     }
 }

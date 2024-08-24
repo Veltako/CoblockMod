@@ -22,7 +22,6 @@ import java.util.Set;
 @Mod.EventBusSubscriber(modid = CoblockMod.MOD_ID)
 public class ItemWaterEventHandler {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(ItemWaterEventHandler.class);
     private static final Set<ItemEntity> itemsToCheck = new HashSet<>();
 
     @SubscribeEvent

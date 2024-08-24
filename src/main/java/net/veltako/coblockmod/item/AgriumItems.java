@@ -30,6 +30,9 @@ public class AgriumItems {
     public static final RegistryObject<Item> AGRIUM_APPLE = ITEMS.register("agrium_apple",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.COBLOCK_TAB).food(Food.AGRIUM_APPLE)));
 
+    public static final RegistryObject<Item> AGRIUM_CHIPS = ITEMS.register("agrium_chips",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.COBLOCK_TAB).food(Food.AGRIUM_CHIPS)));
+
     public static class Food {
         public static final FoodProperties AGRIUM_APPLE = new FoodProperties.Builder()
                 .nutrition(20)
@@ -47,7 +50,13 @@ public class AgriumItems {
                 .effect(() -> new MobEffectInstance(MobEffects.LUCK, 200, 6), 1f)
                 .effect(() -> new MobEffectInstance(MobEffects.JUMP, 200, 6), 1f)
                 .effect(() -> new MobEffectInstance(MobEffects.HEAL, 200, 6), 1f)
-                .effect(() -> new MobEffectInstance(MobEffects.GLOWING, 200, 6), 1f)
+                .effect(() -> new MobEffectInstance(MobEffects.POISON, 1000, 6), 1f)
+                .build();
+        public static final FoodProperties AGRIUM_CHIPS = new FoodProperties.Builder()
+                .nutrition(8)
+                .saturationMod(1f)
+                .alwaysEat()
+                .effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 200, 3), 1f)
                 .build();
     }
     public static void register(IEventBus eventBus) {
